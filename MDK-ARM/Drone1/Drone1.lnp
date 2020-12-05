@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"drone1\startup_stm32f407xx.o"
+"drone1\mpu6050.o"
+"drone1\main.o"
+"drone1\stm32f4xx_it.o"
+"drone1\stm32f4xx_hal_msp.o"
+"drone1\stm32f4xx_hal_i2c.o"
+"drone1\stm32f4xx_hal_i2c_ex.o"
+"drone1\stm32f4xx_hal_tim.o"
+"drone1\stm32f4xx_hal_tim_ex.o"
+"drone1\stm32f4xx_hal_uart.o"
+"drone1\stm32f4xx_hal_rcc.o"
+"drone1\stm32f4xx_hal_rcc_ex.o"
+"drone1\stm32f4xx_hal_flash.o"
+"drone1\stm32f4xx_hal_flash_ex.o"
+"drone1\stm32f4xx_hal_flash_ramfunc.o"
+"drone1\stm32f4xx_hal_gpio.o"
+"drone1\stm32f4xx_hal_dma_ex.o"
+"drone1\stm32f4xx_hal_dma.o"
+"drone1\stm32f4xx_hal_pwr.o"
+"drone1\stm32f4xx_hal_pwr_ex.o"
+"drone1\stm32f4xx_hal_cortex.o"
+"drone1\stm32f4xx_hal.o"
+"drone1\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Drone1\Drone1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Drone1.map" -o Drone1\Drone1.axf
